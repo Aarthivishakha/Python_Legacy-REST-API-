@@ -1,0 +1,7 @@
+name: testmon
+language: python
+language_version: "3.6"
+analysis_runtime: "Python >=3.10"
+target_files: ["legacy_api/**/*.py", "tests/**/*.py"]
+trigger:
+  command: "pytest --testmon tests"

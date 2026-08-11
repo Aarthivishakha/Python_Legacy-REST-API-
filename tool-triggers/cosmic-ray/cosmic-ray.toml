@@ -1,0 +1,7 @@
+[cosmic-ray]
+module-path = "legacy_api/service.py"
+timeout = 10.0
+test-command = "python -m unittest tests.test_api"
+
+[cosmic-ray.distributor]
+name = "local"

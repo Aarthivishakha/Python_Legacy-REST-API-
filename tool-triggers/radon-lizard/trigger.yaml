@@ -1,0 +1,7 @@
+name: radon-lizard
+language: python
+language_version: "3.6"
+analysis_runtime: "Python >=3.10"
+target_files: ["legacy_api/**/*.py"]
+trigger:
+  command: "radon cc legacy_api -s -a && lizard legacy_api"
