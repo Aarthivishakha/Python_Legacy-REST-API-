@@ -4,4 +4,4 @@ language_version: "3.12"
 analysis_runtime: "Python >=3.10"
 target_files: ["legacy_api/**/*.py"]
 trigger:
-  command: "python tool-triggers/scripts/run_beniget.py legacy_api"
+  command: "python tool-triggers/beniget/run_beniget.py legacy_api"
