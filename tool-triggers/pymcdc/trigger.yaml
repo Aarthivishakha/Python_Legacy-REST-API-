@@ -1,0 +1,7 @@
+name: pymcdc
+language: python
+language_version: "3.7"
+analysis_runtime: "Python >=3.10"
+target_files: ["legacy_api/routes.py", "tests/test_api.py"]
+trigger:
+  command: "python -m pymcdc --unittest tests/test_api.py legacy_api/routes.py"
