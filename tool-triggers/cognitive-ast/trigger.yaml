@@ -1,0 +1,7 @@
+name: cognitive-ast
+language: python
+language_version: "3.8"
+analysis_runtime: "Python >=3.10"
+target_files: ["legacy_api/**/*.py"]
+trigger:
+  command: "complexipy legacy_api"
