@@ -1,0 +1,7 @@
+name: pip-audit
+language: python
+language_version: "3.13"
+analysis_runtime: "Python >=3.10"
+target_files: ["requirements.txt", "tool-triggers/requirements.txt"]
+trigger:
+  command: "pip-audit -r requirements.txt && pip-audit -r tool-triggers/requirements.txt"

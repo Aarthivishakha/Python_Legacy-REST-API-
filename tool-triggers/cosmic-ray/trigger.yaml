@@ -1,0 +1,7 @@
+name: cosmic-ray
+language: python
+language_version: "3.13"
+analysis_runtime: "Python >=3.10"
+target_files: ["legacy_api/service.py", "tests/test_api.py"]
+trigger:
+  command: "cosmic-ray init tool-triggers/cosmic-ray/cosmic-ray.toml cosmic.sqlite && cosmic-ray exec tool-triggers/cosmic-ray/cosmic-ray.toml cosmic.sqlite"
