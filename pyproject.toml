@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools==68.2.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "legacy-rest-microservice"
+version = "1.0.0"
+description = "Framework-free WSGI REST API for Python 3.16"
+requires-python = ">=3.16,<3.17"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["legacy_api"]
+
+[tool.ruff]
+# Ruff does not yet expose a py316 grammar target.
+target-version = "py315"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
