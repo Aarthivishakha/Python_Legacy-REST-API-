@@ -7,5 +7,5 @@ run:
 	python run.py
 
 analyze:
-	python tool-triggers/scripts/run_beniget.py legacy_api
-	python tool-triggers/scripts/run_pydriller.py .
+	python tool-triggers/beniget/run_beniget.py legacy_api
+	python tool-triggers/pydriller/run_pydriller.py .
