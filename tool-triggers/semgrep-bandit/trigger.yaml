@@ -1,0 +1,7 @@
+name: semgrep-bandit
+language: python
+language_version: "3.11"
+analysis_runtime: "Python >=3.10"
+target_files: ["legacy_api/**/*.py"]
+trigger:
+  command: "semgrep scan --config auto legacy_api && bandit -r legacy_api"

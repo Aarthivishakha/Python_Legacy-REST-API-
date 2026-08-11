@@ -1,0 +1,7 @@
+name: jscpd
+language: python
+language_version: "3.11"
+analysis_runtime: "Node.js + Python >=3.10"
+target_files: ["legacy_api/**/*.py", "tests/**/*.py"]
+trigger:
+  command: "npx jscpd@4.2.5 legacy_api tests --format python"
