@@ -4,4 +4,4 @@ language_version: "3.8"
 analysis_runtime: "Python >=3.10"
 target_files: ["legacy_api/**/*.py", "tests/**/*.py"]
 trigger:
-  command: "coverage run -m unittest discover -s tests && python tool-triggers/scripts/run_beniget.py legacy_api"
+  command: "coverage run -m unittest discover -s tests && python tool-triggers/beniget/run_beniget.py legacy_api"
