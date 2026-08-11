@@ -1,0 +1,7 @@
+name: pydriller
+language: python
+language_version: "3.5"
+analysis_runtime: "Python >=3.10"
+target_files: ["Git history for legacy_api/"]
+trigger:
+  command: "python tool-triggers/scripts/run_pydriller.py ."

@@ -1,0 +1,7 @@
+name: crosshair
+language: python
+language_version: "3.5"
+analysis_runtime: "Python >=3.10"
+target_files: ["legacy_api/schemas.py", "legacy_api/service.py"]
+trigger:
+  command: "crosshair check legacy_api.schemas legacy_api.service"

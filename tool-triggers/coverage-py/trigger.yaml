@@ -1,0 +1,7 @@
+name: coverage-py
+language: python
+language_version: "3.5"
+analysis_runtime: "Python >=3.10"
+target_files: ["legacy_api/**/*.py", "tests/**/*.py"]
+trigger:
+  command: "coverage run -m unittest discover -s tests && coverage report -m"
